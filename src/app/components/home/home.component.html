@@ -1,0 +1,16 @@
+<div class="jumbotron jumbotron-fluid mt-5">
+    <div class="container">
+        <h1 class="display-4">Peliculas App</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+</div>
+
+<div class="container">
+    <br>
+    
+    <app-galeria titulo="Películas en cartelera" [peliculas]="cartelera | slice: 0:6"></app-galeria>
+    <app-galeria titulo="Populares" [peliculas]="populares | slice: 0:6"></app-galeria>
+    <app-galeria titulo="Populares entre los niños" [peliculas]="popularesNinos | slice: 0:6"></app-galeria>
+
+</div>
+
